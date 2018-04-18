@@ -6,54 +6,101 @@
 package com.academiccalendar;
 
 import android.*;
+
 import android.animation.ValueAnimator;
+
 import android.content.Context;
+
 import android.content.Intent;
+
 import android.database.Cursor;
+
 import android.graphics.Color;
+
 import android.graphics.Typeface;
+
 import android.net.Uri;
+
 import android.os.Build;
+
 import android.os.Handler;
+
 import android.provider.MediaStore;
+
 import android.support.v4.app.ActivityCompat;
+
 import android.support.v7.app.AppCompatActivity;
+
 import android.os.Bundle;
+
 import android.util.Log;
+
 import android.util.TypedValue;
+
 import android.view.Gravity;
+
 import android.view.KeyEvent;
+
 import android.view.MotionEvent;
+
 import android.view.View;
+
 import android.view.ViewGroup;
+
 import android.view.animation.AccelerateDecelerateInterpolator;
+
 import android.view.animation.Animation;
+
 import android.view.animation.AnimationUtils;
+
 import android.view.animation.AnticipateInterpolator;
+
 import android.view.animation.Interpolator;
+
 import android.view.animation.OvershootInterpolator;
+
 import android.view.inputmethod.InputMethodManager;
+
 import android.widget.EditText;
+
 import android.widget.ImageView;
+
 import android.widget.ProgressBar;
+
 import android.widget.RelativeLayout;
+
 import android.widget.TextView;
+
 import android.widget.Toast;
 
+
 import com.google.firebase.database.ChildEventListener;
+
 import com.google.firebase.database.DataSnapshot;
+
 import com.google.firebase.database.DatabaseError;
+
 import com.google.firebase.database.DatabaseReference;
+
 import com.google.firebase.database.FirebaseDatabase;
+
 import com.google.firebase.database.ValueEventListener;
+
 import com.itextpdf.text.pdf.PdfReader;
+
 import com.itextpdf.text.pdf.parser.PdfTextExtractor;
 
+
 import java.net.URISyntaxException;
+
 import java.util.ArrayList;
+
 import java.util.HashMap;
+
 import java.util.List;
+
 import java.util.regex.Pattern;
+
 
 public class Login extends AppCompatActivity {
     Animation anim;
